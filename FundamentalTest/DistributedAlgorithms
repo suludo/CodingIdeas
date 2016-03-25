@@ -1,0 +1,39 @@
+
+Bloom Filter:
+
+还有一个比较重要的问题，如何根据输入元素个数n，确定位数组m的大小及hash函数个数。当hash函数个数k=(ln2)*(m/n)时错误率最小。在错误率不大于E的情况下，m至少要等于n*lg(1/E)才能表示任意n个元素的集合。但m还应该更大些，因为还要保证bit数组里至少一半为0，则m应该>=nlg(1/E)*lge 大概就是nlg(1/E)1.44倍(lg表示以2为底的对数)。
+
+　　举个例子我们假设错误率为0.01，则此时m应大概是n的13倍。这样k大概是8个。
+
+
+k = ln2 * (m/n), optimum k for E(rorr rate) to be smallest
+
+m >= n * lg(1/E) * 1.44, to represent n element
+
+
+
+
+Hashing:
+Open Hashing, 拉链法
+
+Closed Hashing， Opened Addressing
+
+d-left Hashing
+
+
+Find Median:
+QuickSelect: O(N) ~ O(N^2)
+Median of Median, worst case O(N)
+HEAP: O(N*LGN)
+Large dataset: divide by intervals, find interval index, find inside the interval set.
+
+
+Inverted Index
+
+
+
+Virtual Memory
+http://www.informit.com/guides/content.aspx?g=cplusplus&seqNum=213
+
+Memory mapping is a common concept in POSIX and Windows systems. It enables a process to map disk files to its address space, treating them as memory blocks rather than files.
+Usually, the mapping consists of translating a disk location to a virtual address and vice versa; there is no copying of disk data into the RAM. 

@@ -1,0 +1,25 @@
+
+
+<climits>(limits.h)
+INT_MAX
+
+
+<utility>
+pair
+
+
+<queue>
+priority_queue
+
+<fstream>
+std::ifstream
+
+<cctype> (C++)
+isdigit
+
+<random>
+default_random_engine
+
+<cstdio>      /* printf, scanf, puts, NULL */
+<cstdlib>     /* srand, rand */
+<ctime>       /* time */
